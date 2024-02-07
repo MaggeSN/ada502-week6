@@ -30,6 +30,7 @@ jobs:
         pipx install poetry
     - name: Install dependencies
       run: |
+        !cd temp_store
         poetry install
         poetry install --with test
     - name: Test with pytest
