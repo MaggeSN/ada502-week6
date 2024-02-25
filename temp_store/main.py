@@ -28,7 +28,7 @@ def hello_world():
     return "Hello, world!"
 
 @app.get("/user")
-def get_user():
+def get_user() -> User:
     return User(name = "Magnus",age = 22)
 
 """@app.get("/weather/bergen")
